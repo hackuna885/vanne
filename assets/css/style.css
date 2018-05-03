@@ -1,0 +1,198 @@
+@font-face {
+   font-family: "Gotham-Ultra";
+   src: url("fonts/Gotham-Ultra.otf");
+}
+@font-face {
+   font-family: "Gotham-Bold";
+   src: url("fonts/Gotham-Bold.otf");
+}
+a:link   
+{   
+ text-decoration:none; 
+ color:#ffffff;  
+}   
+a:visited {color:#ffffff;}
+a:active {color:#ffffff;}
+a:hover {color:#ffffff;}
+
+
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		html,body{
+			height: 100%;
+      background-color: #000;
+      
+		}
+		body{
+        background-image: url("../img/fondo.jpg");
+        background-repeat: no-repeat;
+    		background-size: cover;
+    		background-position: center center;
+    		background-attachment: fixed;
+        }
+    .titulo{
+      font-family: "Gotham-Bold";
+      font-size: 1.3em;
+      color: #FFF;
+      text-align: center;
+    }
+    .c1{
+      width: 240px;
+      height: 400px;
+      position: absolute;
+      margin: auto;
+      left: 50%;
+      top: 50%;
+      margin-left: -120px;
+      margin-top: -200px;
+    }
+    .c2{
+      position: absolute;
+      width: 240px;
+      height: 400px;
+      margin: auto;
+      left: 0px;
+      right: 0px;
+    }
+    
+    .cLogo{
+      width: 110px;
+      height: 110px;
+      position: absolute;
+      top: 20px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      background-color: rgba(226,5,0,.5);
+    }
+    .logo{
+      width: 65px;
+      height: 49px;
+      background-image: url("../img/logo.svg");
+      position: absolute;
+      margin: auto;
+      top: 0px;
+      bottom: 3px;
+      left: 5px;
+      right: 0px;
+    }
+    .cLogin{
+      top: 20px;
+      position: absolute;
+      width: 240px;
+      height: 354px;
+      background-image: url("../img/cuadroLogin.svg");
+      background-position: center;
+      background-size: cover;
+    }
+    .c2Titulo{
+      width: 80px;
+      height: 30px;
+      color: #FFF;
+      font-size: 1.5em;
+      font-family: "Gotham-Ultra";
+      position: absolute;
+      right: 20px;
+      top: 35px;
+    }
+    .spanTexto{
+      color: #FFF;
+      font-size: 1em;
+      font-family: "Gotham-Bold";
+      height: 30px;
+      top: 35px;
+      position: absolute;
+      line-height: 30px;
+    }
+    .posdisSpan{
+      top: 80px;
+    }
+    .c2Form{
+      width: 222px;
+      height: 75px;
+      position: absolute;
+      top: 140px;
+      margin: auto;
+      left: 0px;
+      right: 0px;
+    }
+    .inp{
+      height: 30px;
+      border-width: 0px;
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      font-family: "Gotham-Bold";
+      font-size: .9em;
+      padding-left: 10px;
+    }
+    .inpNombre{
+      width: 212px;
+    }
+    .inpPassword{
+      width: 172px;
+      bottom: 0px;
+      position: absolute;
+    }
+    .cBtnRegistro{
+      position: absolute;
+      width: 90px;
+      height: 70px;
+      left: 10px;
+      bottom: 20px;
+      cursor: pointer;
+    }
+    .btnRegistro{
+      width: 132px;
+      height: 70px;
+      background-image: url("../img/btnReg.svg");
+    }
+    .btnRegistro:hover{
+      background-image: url("../img/btnReg2.svg");
+    }
+    .txtBtnReg{
+      top: 25px;
+      left: 10px;
+      position: absolute;
+      line-height: 70px:
+      color: #FFF;
+      font-family: "Gotham-Bold";
+    }
+    .cBotonLogin{
+      position: absolute;
+      width: 142px;
+      height: 142px;
+      top: 232px;
+      right: 0px;
+      cursor: pointer;
+      background-image: url("../img/botonLogin.svg");
+      background-position: center;
+        background-size: cover;
+    }
+    .cBotonLogin:hover{
+      background-image: url("../img/botonLogin2.svg");
+      
+    }
+    .pos2{
+      position: absolute;
+      width: 142px;
+      height: 142px;
+      top: 72px;
+      right: -9px;
+    }
+    .btnAction{
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      border-right: 130px solid transparent;
+        border-top: 130px solid transparent;
+        border-bottom: 0px solid transparent; 
+        border-radius: 0px 0px 10px 0px;
+    }
+    .txtBoton{
+      bottom: 10px;
+      right: 10px;
+      position: absolute;
+      font-family: "Gotham-Bold";
+      color: #FFF;
+    }
