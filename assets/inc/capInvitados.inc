@@ -81,7 +81,7 @@ $seccCap = $_SESSION['seccLider'];
 
 									<div class="row 50%">
 											<div class="6u 12u(mobile)">
-												<input name="txtTelefonoI" placeholder="Teléfono" type="text" maxlength="13" minlength="8" pattern="[0-9]{8,13}" title="Número de Teléfono. Tamaño mínimo: 8. Tamaño máximo: 13"/>
+												<input name="txtTelefonoI" placeholder="Teléfono" type="text" size="8" maxlength="10" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;"  title="Número de Teléfono. Tamaño mínimo: 8. Tamaño máximo: 10"/>
 										</div>
 
 										<div class="6u 12u(mobile)">
@@ -91,7 +91,7 @@ $seccCap = $_SESSION['seccLider'];
 
 									<div class="row 50%">
 										<div class="12u 12u(mobile)">
-											<input name="txtSeccionI" placeholder="Sección" type="text" id="seccAuto" value="<?php echo $seccCap;?>"/>
+											<input name="txtSeccionI" placeholder="Sección" type="text" id="seccAuto" size="4" maxlength="4" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" value="<?php echo $seccCap;?>"/>
 										</div>
 									</div>
 

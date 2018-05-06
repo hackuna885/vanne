@@ -79,6 +79,10 @@
 
 /* Containers */
 
+	.paginacion{
+			text-align: center;
+		}
+
 	.container {
 		margin-left: auto;
 		margin-right: auto;
@@ -2010,6 +2014,54 @@
 		button:hover,
 		.button:hover {
 			color: #ff1e1c;
+			border-color: rgba(243, 88, 88, 0.5);
+		}
+
+	.buttonX {
+		-moz-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		-webkit-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		-ms-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		display: inline-block;
+		color: inherit;
+		background: none;
+		text-decoration: none;
+		border: solid 1px #c2c7cc;
+		border-radius: 0.35em;
+		padding: 0.8em .5em 0.8em .5em;
+		cursor: pointer;
+		outline: 0;
+	}
+
+		input[type="button"]:hover,
+		input[type="submit"]:hover,
+		input[type="reset"]:hover,
+		button:hover,
+		
+	.buttonX:hover {
+			color: #ff1e1c;
+			border-color: rgba(243, 88, 88, 0.5);
+		}
+
+
+	.button2 {
+		-moz-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		-webkit-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		-ms-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		display: inline-block;
+		color: inherit;
+		background: #F7001C;
+		text-decoration: none;
+		border: solid 1px #F7001C;
+		border-radius: 0.35em;
+		padding: 0.8em 1em 0.8em 1em;
+		cursor: pointer;
+		outline: 0;
+		color: #fff;
+	}
+	.button2:hover {
+			color: #A50024;
 			border-color: rgba(243, 88, 88, 0.5);
 		}
 

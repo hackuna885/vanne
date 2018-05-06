@@ -7,7 +7,7 @@ session_start();
 
 	$dase = new SQLite3("../data/datos.db");
 
-	$cs = $dase -> query("SELECT id,nombre_capAltaL||' '||aPaterno_capAltaL||' '||aMaterno_capAltaL AS nombreLider, calle_capAltaL||' #'||nInt_capAltaL||' COL. '||colonia_capAltaL AS direccLider, tel_capAltaL, seccion_capAltaL FROM capAltaLider ORDER BY fechaRCap_capAltaL DESC LIMIT 7;");
+	$cs = $dase -> query("SELECT id,nombre_CapInvi||' '||aPaterno_CapInvi||' '||aMaterno_CapInvi AS nombreInvitado, calle_CapInvi||' #'||nInt_CapInvi||' COL. '||colonia_CapInvi AS direccInvitado, telefono_CapInvi, seccion_CapInvi FROM capInvitados ORDER BY fechaR_CapInvi DESC LIMIT 7;");
 
 	echo '
 				<section class="container animated fadeIn">
@@ -27,19 +27,19 @@ session_start();
 		    
 	while($resul = $cs->fetchArray()) {
 		$idTab = $resul['id'];
-		$nombreTab = $resul['nombreLider'];
-		$dirTab = $resul['direccLider'];
-		$telTab = $resul['tel_capAltaL'];
-		$seccTab = $resul['seccion_capAltaL'];
+		$nombreTab = $resul['nombreInvitado'];
+		$dirTab = $resul['direccInvitado'];
+		$telTab = $resul['telefono_CapInvi'];
+		$seccTab = $resul['seccion_CapInvi'];
 
 	  echo '
 
 									<tr>
-										<td><a href="../editLider/mod.aspx?idUsuario='.$idTab.'">'.$nombreTab.'</a></td>
+										<td><a href="../editInvitado/mod.aspx?idUsuario='.$idTab.'">'.$nombreTab.'</a></td>
 										<td>'.$dirTab.'</td>
 										<td>'.$telTab.'</td>
 										<td>'.$seccTab.'</td>
-										<td><a href="../editLider/mod.aspx?idUsuario='.$idTab.'">Editar</a></td>
+										<td><a href="../editInvitado/mod.aspx?idUsuario='.$idTab.'">Editar</a></td>
 									</tr>
 
 	  ';

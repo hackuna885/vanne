@@ -9,7 +9,7 @@
 								<header>
 									<h2>Buscador Lider</h2>
 									<br>
-									<form action="protected/php/buscadorLider.php" method="POST">
+									<form action="../buscadorLider/rapido.aspx" method="POST">
 										<div class="row 50%">
 											<div class="8u 12u(mobile)">
 												<input name="txtBusqueda" placeholder="Nombre" type="text" autocomplete="on" id="liderAuto" autofocus/>
