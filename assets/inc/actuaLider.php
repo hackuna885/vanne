@@ -124,7 +124,7 @@ $_SESSION['idLider'] = $_GET['idUsuario'];
 										<div class="12u">
 											<ul class="actions">
 												<li><input type="submit" value="Actualizar" /></li>
-												<a href="../busLideres/busqueda.aspx" class="button">Cancelar</a></li>
+												<li><a href="../busLideres/busqueda.aspx" class="button">Cancelar</a></li>
 											</ul>
 										</div>
 									</div>

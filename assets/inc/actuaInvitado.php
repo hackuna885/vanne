@@ -116,9 +116,8 @@ $_SESSION['idLider'] = $_GET['idUsuario'];
 									<div class="row 50%">
 										<div class="12u">
 											<ul class="actions">
-												<li><input type="submit" value="Continuar" /></li>
-												<li><a href="../finCapInvi/terminar.aspx" class="button">Terminar</a></li>
-												<li><input type="reset" value="Limpiar" /></li>
+												<li><input type="submit" value="Actualizar" /></li>
+												<li><a href="../busInvitados/busqueda.aspx" class="button">Cancelar</a></li>
 											</ul>
 										</div>
 									</div>
