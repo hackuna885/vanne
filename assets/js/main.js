@@ -63,7 +63,7 @@
 				$(
 					'<div id="navPanel">' +
 						'<nav>' +
-							'<a href="index.php" class="link depth-0">Inicio</a>' +
+							'<a href="capturas.aspx" class="link depth-0">Inicio</a>' +
 							$('#nav').navList() +
 						'</nav>' +
 					'</div>'

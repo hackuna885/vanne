@@ -47,6 +47,14 @@
 		        });
 
 		    </script>
+		    <script>
+
+		        $( "#inviAuto" ).autocomplete({
+		          delay: 0,
+		          source: "../protected/php/autoInvi.php"
+		        });
+
+		    </script>
 		    <!-- Script AutoCompletado -->
 
 		<!-- Scripts -->

@@ -6,4 +6,4 @@
 					<div id="header" class="container">
 
 						<!-- Logo -->
-							<h1 id="logo"><a href="index.php">Inicio</a></h1>
+							<h1 id="logo"><a href="capturas.aspx">Inicio</a></h1>

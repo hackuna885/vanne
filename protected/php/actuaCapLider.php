@@ -50,8 +50,8 @@ if (isset($_POST['txtNombre']) && !empty($_POST['txtNombre']) &&
 	$txtCorreo = $_POST['txtCorreo'];
 	$txtVinculo = mb_strtoupper($_POST['txtVinculo'], 'UTF-8');
 
-	$_SESSION['nombreLider'] = $txtNombre.' '.$txtAPaterno.' '.$txtAMaterno;
-	$_SESSION['seccLider'] = $txtSeccion;
+	$_SESSION['nombreLider'] = "";
+	$_SESSION['seccLider'] = "";
 
 	
 	$con = new SQLite3("../data/datos.db") or die("Problemas para conectar!");
@@ -59,19 +59,19 @@ if (isset($_POST['txtNombre']) && !empty($_POST['txtNombre']) &&
 
 
 
-	$cs = $con -> query("INSERT INTO capAltaLider (lugar_capAltaL,seccion_capAltaL,calle_capAltaL,nInt_capAltaL,nExt_capAltaL,colonia_capAltaL,cp_capAltaL,hora_capAltaL,fecha_capAltaL,nombre_capAltaL,aPaterno_capAltaL,aMaterno_capAltaL,tel_capAltaL,correo_capAltaL,vinculo_capAltaL,fechaRCap_capAltaL,idCap_capAltaL) VALUES ('$txtLugar','$txtSeccion','$txtCalle','$txtNInt','$txtNExt','$txtColonia','$txtCP','$txtHora','$txtFecha','$txtNombre','$txtAPaterno','$txtAMaterno','$txtTelefono','$txtCorreo','$txtVinculo','$fechaRCap','$idUsrCap')");
+	$cs = $con -> query("UPDATE capAltaLider SET lugar_capAltaL='$txtLugar',seccion_capAltaL='$txtSeccion',calle_capAltaL='$txtCalle',nInt_capAltaL='$txtNInt',nExt_capAltaL='$txtNExt',colonia_capAltaL='$txtColonia',cp_capAltaL='$txtCP',hora_capAltaL='$txtHora',fecha_capAltaL='$txtFecha',nombre_capAltaL='$txtNombre',aPaterno_capAltaL='$txtAPaterno',aMaterno_capAltaL='$txtAMaterno',tel_capAltaL='$txtTelefono',correo_capAltaL='$txtCorreo',vinculo_capAltaL='$txtVinculo',fechaRCap_capAltaL='$fechaRCap',idCap_capAltaL='$idUsrCap' WHERE id = '$_SESSION[idLider]'");
 	
 
 	$con -> close();
-
-	echo "<script> window.location='../../invitados/capturas.aspx';</script>";
+	echo "<script> alert('Datos Actualizados!');</script>";
+	echo "<script> window.location='../../busLideres/busqueda.aspx';</script>";
 
 
 
 	
 }else{
 	echo "<script> alert('Faltan Datos!');</script>";
-	echo "<script> window.location='../../lideres/capturas.aspx';</script>";
+	echo "<script> window.location='../../busLideres/busqueda.aspx';</script>";
 }
 
 

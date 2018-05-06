@@ -48,14 +48,14 @@
 				</div>
 
 
-				<div class="cBtnRegistro">
+				<!-- <div class="cBtnRegistro">
 						<a href="aviso/msPriva.aspx">
 							<div class="btnRegistro"></div>
 							<div class="txtBtnReg">
 								Registro
 							</div>
 						</a>
-				</div>
+				</div> -->
 
 			</div>
 

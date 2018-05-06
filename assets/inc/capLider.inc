@@ -11,59 +11,61 @@
 
 									<div class="row 50%">
 										<div class="8u 12u(mobile)">
-											<input name="txtLugar" placeholder="Lugar" type="text" autofocus/>
+											<input name="txtLugar" placeholder="Lugar" type="text" autocomplete="on" autofocus/>
 										</div>
 										<div class="4u 12u(mobile)">
-											<input name="txtSeccion" placeholder="Sección" type="text" id="seccAuto" maxlength="4" minlength="4" pattern="[3723-3822]{4}" title="Sección. De la 3723 - 3822"/>
+											<input name="txtSeccion" placeholder="Sección" type="text" id="seccAuto" size="4" maxlength="4" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" autocomplete="on" title="Sección. De la 3723 - 3822"/>
 										</div>
 									</div>
 
 									<div class="row 50%">
 										<div class="8u 12u(mobile)">
-											<input name="txtCalle" placeholder="Calle" type="text" />
+											<input name="txtCalle" placeholder="Calle" type="text" autocomplete="on"/>
 										</div>
 										<div class="2u 6u(mobile)">
-											<input name="txtNInt" placeholder="# Int" type="text" />
+											<input name="txtNInt" placeholder="# Int" type="text" autocomplete="on"/>
 										</div>
 										<div class="2u 6u(mobile)">
-											<input name="txtNExt" placeholder="# Ext" type="text" />
+											<input name="txtNExt" placeholder="# Ext" type="text" autocomplete="on"/>
 										</div>
 									</div>
 
 									<div class="row 50%">
 											<div class="6u 12u(mobile)">
-												<input name="txtColonia" placeholder="Colonia" type="text" id="coloniaAuto"/>
+												<input name="txtColonia" placeholder="Colonia" type="text" id="coloniaAuto" onfocusout="ejecutarAjax()"/>
 										</div>
 
 										<div class="6u 12u(mobile)">
-											<input name="txtCP" placeholder="Cod. Post." type="text" id="codigoAuto"/>
+											<span id="salidaAjax">
+											<input name="txtCP" placeholder="Cod. Post." type="text" id="codigoAuto" size="5" maxlength="5" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" autocomplete="on"/>
+											</span>
 										</div>
 									</div>
 
 									<div class="row 50%">
 										<div class="4u 6u(mobile)">
-											<input name="txtHora" placeholder="Hora" type="time" value="<?php echo $horaCap;?>"/>
+											<input name="txtHora" placeholder="Hora" type="time" value="<?php echo $horaCap;?>" autocomplete="on"/>
 										</div>
 										<div class="8u 6u(mobile)">
-											<input name="txtFecha" placeholder="Fecha" type="date" value="<?php echo $fechaCap;?>" />
+											<input name="txtFecha" placeholder="Fecha" type="date" value="<?php echo $fechaCap;?>"  autocomplete="on"/>
 										</div>
 									</div>
 
 									<div class="row 50%">
 										<div class="12u 12u(mobile)">
-											<input name="txtNombre" placeholder="Nombre" type="text" required/>
+											<input name="txtNombre" placeholder="Nombre" type="text" autocomplete="on" required/>
 										</div>
 									</div>
 
 									<div class="row 50%">
 										<div class="12u 12u(mobile)">
-											<input name="txtAPaterno" placeholder="Apellido Paterno" type="text" required/>
+											<input name="txtAPaterno" placeholder="Apellido Paterno" type="text" autocomplete="on" required/>
 										</div>
 									</div>
 
 									<div class="row 50%">
 										<div class="12u 12u(mobile)">
-											<input name="txtAMaterno" placeholder="Apellido Materno" type="text" />
+											<input name="txtAMaterno" placeholder="Apellido Materno" type="text" autocomplete="on"/>
 										</div>
 									</div>
 
@@ -71,17 +73,17 @@
 
 									<div class="row 50%">
 											<div class="6u 12u(mobile)">
-												<input name="txtTelefono" placeholder="Teléfono" type="text" maxlength="13" minlength="8" pattern="[0-9]{8,13}" title="Número de Teléfono. Tamaño mínimo: 8. Tamaño máximo: 13"/>
+												<input name="txtTelefono" placeholder="Teléfono" type="text" size="10" minlength=="8" maxlength="10" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;"  title="Número de Teléfono. Tamaño mínimo: 8. Tamaño máximo: 10" autocomplete="on"/>
 										</div>
 
 										<div class="6u 12u(mobile)">
-											<input name="txtCorreo" placeholder="Correo" type="email" class="correoX" />
+											<input name="txtCorreo" placeholder="Correo" type="email" class="correoX" autocomplete="on"/>
 										</div>
 									</div>
 
 									<div class="row 50%">
 										<div class="12u 12u(mobile)">
-											<input name="txtVinculo" placeholder="Vinculo Político" type="text" />
+											<input name="txtVinculo" placeholder="Vinculo Político" type="text" autocomplete="on"/>
 										</div>
 									</div>
 

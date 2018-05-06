@@ -11,7 +11,7 @@ if (strlen($str) > 2) {
 
 	$db = new SQLite3("../data/catalogos.db");
 
-	$cs = $db -> query("SELECT d_asenta FROM CP_Estado WHERE d_asenta LIKE '%$_GET[term]%' ORDER BY d_asenta LIMIT 5;");
+	$cs = $db -> query("SELECT d_asenta FROM CP_Estado WHERE d_asenta LIKE '%$_GET[term]%' GROUP BY d_asenta ORDER BY d_asenta LIMIT 5;");
 		    
 	while($resul = $cs->fetchArray()) {
 	  $return_arr[] =  strtoupper($resul['d_asenta']);

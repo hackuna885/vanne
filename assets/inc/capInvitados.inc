@@ -52,6 +52,31 @@ $seccCap = $_SESSION['seccLider'];
 										</div>
 									</div>
 
+
+									<div class="row 50%">
+										<div class="8u 12u(mobile)">
+											<input name="txtCalle" placeholder="Calle" type="text" autocomplete="on"/>
+										</div>
+										<div class="2u 6u(mobile)">
+											<input name="txtNInt" placeholder="# Int" type="text" autocomplete="on"/>
+										</div>
+										<div class="2u 6u(mobile)">
+											<input name="txtNExt" placeholder="# Ext" type="text" autocomplete="on"/>
+										</div>
+									</div>
+
+									<div class="row 50%">
+											<div class="6u 12u(mobile)">
+												<input name="txtColonia" placeholder="Colonia" type="text" id="coloniaAuto" onfocusout="ejecutarAjax()"/>
+										</div>
+
+										<div class="6u 12u(mobile)">
+											<span id="salidaAjax">
+											<input name="txtCP" placeholder="Cod. Post." type="text" id="codigoAuto" size="5" maxlength="5" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" autocomplete="on"/>
+											</span>
+										</div>
+									</div>
+
 									
 
 									<div class="row 50%">
@@ -74,7 +99,7 @@ $seccCap = $_SESSION['seccLider'];
 										<div class="12u">
 											<ul class="actions">
 												<li><input type="submit" value="Continuar" /></li>
-												<li><a href="../protected/php/terminarCaptura.php" class="button">Terminar</a></li>
+												<li><a href="../finCapInvi/terminar.aspx" class="button">Terminar</a></li>
 												<li><input type="reset" value="Limpiar" /></li>
 											</ul>
 										</div>
