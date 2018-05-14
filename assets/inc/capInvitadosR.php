@@ -57,10 +57,10 @@ $con -> close();
 											<input name="txtLider" placeholder="Lider" type="text" id="liderAuto" value="<?php echo $liderCap;?>" required/>
 										</div>
 									</div>
-									
-									<div class="row 50%">
+
+									<div class="oculto row 50%">
 										<div class="6u 12u(mobile)">
-												<input name="txtClv" placeholder="Correo" type="email" class="correoX" value="<?php echo $curpForm;?>"/>
+												<input name="txtClv" placeholder="Clave" type="text" class="correoX" value="<?php echo $curpForm;?>"/>
 										</div>
 									</div>
 
