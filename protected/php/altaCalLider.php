@@ -32,6 +32,7 @@ if (isset($_POST['txtNombre']) && !empty($_POST['txtNombre']) &&
 	$txtTelefono = "";
 	$txtCorreo = "";
 	$txtVinculo = "";
+	$txtClv = "";
 
 
 	$txtLugar = mb_strtoupper($_POST['txtLugar'], 'UTF-8');
@@ -49,6 +50,7 @@ if (isset($_POST['txtNombre']) && !empty($_POST['txtNombre']) &&
 	$txtTelefono = $_POST['txtTelefono'];
 	$txtCorreo = $_POST['txtCorreo'];
 	$txtVinculo = mb_strtoupper($_POST['txtVinculo'], 'UTF-8');
+	$txtClv = mb_strtoupper($_POST['txtClv'], 'UTF-8');
 
 	$_SESSION['nombreLider'] = $txtNombre.' '.$txtAPaterno.' '.$txtAMaterno;
 	$_SESSION['seccLider'] = $txtSeccion;
@@ -59,7 +61,7 @@ if (isset($_POST['txtNombre']) && !empty($_POST['txtNombre']) &&
 
 
 
-	$cs = $con -> query("INSERT INTO capAltaLider (lugar_capAltaL,seccion_capAltaL,calle_capAltaL,nInt_capAltaL,nExt_capAltaL,colonia_capAltaL,cp_capAltaL,hora_capAltaL,fecha_capAltaL,nombre_capAltaL,aPaterno_capAltaL,aMaterno_capAltaL,tel_capAltaL,correo_capAltaL,vinculo_capAltaL,fechaRCap_capAltaL,idCap_capAltaL) VALUES ('$txtLugar','$txtSeccion','$txtCalle','$txtNInt','$txtNExt','$txtColonia','$txtCP','$txtHora','$txtFecha','$txtNombre','$txtAPaterno','$txtAMaterno','$txtTelefono','$txtCorreo','$txtVinculo','$fechaRCap','$idUsrCap')");
+	$cs = $con -> query("INSERT INTO capAltaLider (lugar_capAltaL,seccion_capAltaL,calle_capAltaL,nInt_capAltaL,nExt_capAltaL,colonia_capAltaL,cp_capAltaL,hora_capAltaL,fecha_capAltaL,clv_capAltaL,nombre_capAltaL,aPaterno_capAltaL,aMaterno_capAltaL,tel_capAltaL,correo_capAltaL,vinculo_capAltaL,fechaRCap_capAltaL,idCap_capAltaL) VALUES ('$txtLugar','$txtSeccion','$txtCalle','$txtNInt','$txtNExt','$txtColonia','$txtCP','$txtHora','$txtFecha','$txtClv','$txtNombre','$txtAPaterno','$txtAMaterno','$txtTelefono','$txtCorreo','$txtVinculo','$fechaRCap','$idUsrCap')");
 	
 
 	$con -> close();

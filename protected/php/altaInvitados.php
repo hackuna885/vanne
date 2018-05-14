@@ -25,6 +25,7 @@ if (isset($_POST['txtLider']) && !empty($_POST['txtLider']) &&
 	$txtTelefonoI = "";
 	$txtCorreoI = "";
 	$txtSeccionI = "";
+	$txtClv = "";
 
 
 	$txtLider = mb_strtoupper($_POST['txtLider'], 'UTF-8');
@@ -39,14 +40,14 @@ if (isset($_POST['txtLider']) && !empty($_POST['txtLider']) &&
 	$txtTelefonoI = $_POST['txtTelefonoI'];
 	$txtCorreoI = $_POST['txtCorreoI'];
 	$txtSeccionI = $_POST['txtSeccionI'];
-
+	$txtClv = mb_strtoupper($_POST['txtClv'], 'UTF-8');
 	
 	$con = new SQLite3("../data/datos.db") or die("Problemas para conectar!");
 
 
 
 
-	$cs = $con -> query("INSERT INTO capInvitados (lider_CapInvi,nombre_CapInvi,aPaterno_CapInvi,aMaterno_CapInvi,calle_CapInvi,nInt_CapInvi,nExt_CapInvi,colonia_CapInvi,cp_CapInvi,telefono_CapInvi,correo_CapInvi,seccion_CapInvi,fechaR_CapInvi,idUsr_CapInvi) VALUES ('$txtLider','$txtNombreI','$txtAPaternoI','$txtAMaternoI','$txtCalle','$txtNInt','$txtNExt','$txtColonia','$txtCP','$txtTelefonoI','$txtCorreoI','$txtSeccionI','$fechaRCap','$idUsrCap')");
+	$cs = $con -> query("INSERT INTO capInvitados (lider_CapInvi,clv_CapInvi,nombre_CapInvi,aPaterno_CapInvi,aMaterno_CapInvi,calle_CapInvi,nInt_CapInvi,nExt_CapInvi,colonia_CapInvi,cp_CapInvi,telefono_CapInvi,correo_CapInvi,seccion_CapInvi,fechaR_CapInvi,idUsr_CapInvi) VALUES ('$txtLider','$txtClv','$txtNombreI','$txtAPaternoI','$txtAMaternoI','$txtCalle','$txtNInt','$txtNExt','$txtColonia','$txtCP','$txtTelefonoI','$txtCorreoI','$txtSeccionI','$fechaRCap','$idUsrCap')");
 	
 
 	$con -> close();

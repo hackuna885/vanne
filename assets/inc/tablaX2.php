@@ -59,11 +59,11 @@ if (empty($_GET['pag'])) {
 	  echo '
 
 									<tr>
-										<td><a href="../editLider/mod.aspx?idUsuario='.$idTab.'">'.$nombreTab.'</a></td>
+										<td>'.$nombreTab.'</td>
 										<td>'.$dirTab.'</td>
 										<td>'.$seccTab.'</td>
-										<td><a href="../editLider/mod.aspx?idUsuario='.$idTab.'">Agregar</a></td>
-										<td><a href="../editLider/mod.aspx?idUsuario='.$idTab.'">Agregar</a></td>
+										<td><a href="../lideresR/capturasR.aspx?idUsuario='.$idTab.'">Agregar</a></td>
+										<td><a href="../invitadosR/capturasR.aspx?idUsuario='.$idTab.'">Agregar</a></td>
 									</tr>
 
 	  ';

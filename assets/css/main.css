@@ -53,6 +53,9 @@
 		margin: 0px auto;
 		width: 480px;
 	}
+	.oculto{
+		display: none;
+	}
 
 
 /* FORMULARIO */
