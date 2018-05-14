@@ -27,6 +27,7 @@
 										<ul>
 											<li><a href="../busLideres/busqueda.aspx">Lideres</a></li>
 											<li><a href="../busInvitados/busqueda.aspx">Invitados</a></li>
+											<li><a href="../buscadorX2/busqueda.aspx">Buscador</a></li>
 										</ul>
 									</li>
 									<li class="break"><a href="#">Menu</a></li>

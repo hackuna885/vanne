@@ -53,19 +53,19 @@
 
 									<div class="row 50%">
 										<div class="12u 12u(mobile)">
-											<input name="txtNombre" placeholder="Nombre" type="text" autocomplete="on" required/>
+											<input name="txtNombre" placeholder="Nombre" type="text" autocomplete="on" required />
 										</div>
 									</div>
 
 									<div class="row 50%">
 										<div class="12u 12u(mobile)">
-											<input name="txtAPaterno" placeholder="Apellido Paterno" type="text" autocomplete="on" required/>
+											<input name="txtAPaterno" placeholder="Apellido Paterno" type="text" autocomplete="on" required />
 										</div>
 									</div>
 
 									<div class="row 50%">
 										<div class="12u 12u(mobile)">
-											<input name="txtAMaterno" placeholder="Apellido Materno" type="text" autocomplete="on"/>
+											<input name="txtAMaterno" placeholder="Apellido Materno" type="text" autocomplete="on" />
 										</div>
 									</div>
 
